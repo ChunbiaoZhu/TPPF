@@ -1,35 +1,39 @@
-## Robust Saliency Detection via Fusing Foreground and Background Priors
+## A Three-pathway Psychobiological Framework of Salient Object Detection Using Stereoscopic Technology
 
-[Full-text is available on arXiv.](https://arxiv.org/pdf/1711.00322.pdf)
+This paper is accepted at ICCV workshop.
+
+[Full-text is available on CVF.](http://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w43/Zhu_A_Three-Pathway_Psychobiological_ICCV_2017_paper.pdf)
 
 ## Abstract
 
- 	
-Automatic Salient object detection has received tremendous attention from research community and has been an increasingly
-important tool in many computer vision tasks. This paper proposes a novel bottom-up salient object detection
-framework which considers both foreground and background cues. First, A series of background and foreground seeds
-are extracted from an image reliably, and then used for calculation
-of saliency map separately. Next, a combination of
-foreground and background saliency map is performed. Last,
-a refinement step based on geodesic distance is utilized to
-enhance salient regions, thus deriving the final saliency map.
-Particularly we provide a robust scheme for seeds selection
-which contributes a lot to accuracy improvement in saliency
-detection. Extensive experimental evaluations demonstrate
-the effectiveness of our proposed method against other outstanding
-methods.
+Saliency detection, finding the most important parts of
+an image, has become increasingly popular in computer vision.
+Existing proposal methods are mostly based on color
+information, which may not be effective for cluttered backgrounds.
+We propose a new algorithm leveraging stereopsis
+to generate optical flow which can obtain addition cue
+(depth cue) to get the final saliency map. The proposed
+framework consists of three pathways. The first pathway
+eliminates the background based on cellular automata. The
+second pathway gets the optical flow and color flow saliency
+map. The third pathway calculates a coarse saliency map.
+Finally, we fuse these three pathways to generate the final
+saliency map. Besides, we construct a new high-quality
+dataset with the complex scene to make computer challenge
+human vision. Experimental results on our dataset and another
+three popular datasets demonstrate that our method
+is superior to the existing methods in terms of robustness.
 
 
 ## Framework
-![QFramework saliency detection](https://github.com/ChunbiaoZhu/FBP/blob/master/framework.jpg)
+![QFramework saliency detection](https://github.com/ChunbiaoZhu/TPPF/blob/master/framework.png)
 
-## Code & Results
+## DATASET
 
-Code will be released soon!
+Dataset is public.
 
-You can download our Results on ASD Dataset in [here](https://github.com/ChunbiaoZhu/FBP/blob/master/FBP-ASD.zip)
+You can download in [here](https://github.com/ChunbiaoZhu/TPPF/blob/master/%5BDataset%5DPKU80.zip)
 
-Results on other datasets please contact : zhuchunbiao@pku.edu.cn
 
 ## Acknowledgements
 
@@ -38,5 +42,5 @@ This work was supported by the grant of National Natural Science Foundation of C
 
 ## Contact
 
-If you have any general doubt about our work or code which may be of interest for other researchers, please use the [public issues section](https://github.com/ChunbiaoZhu/FBP/issues) on this github repo. Alternatively, drop us an e-mail at <mailto:zhuchunbiao@pku.edu.cn>.
+If you have any general doubt about our work or code which may be of interest for other researchers, please use the [public issues section](https://github.com/ChunbiaoZhu/TPPF/issues) on this github repo. Alternatively, drop us an e-mail at <mailto:zhuchunbiao@pku.edu.cn>.
 
