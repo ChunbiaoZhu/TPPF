@@ -34,6 +34,15 @@ Dataset is public.
 
 You can download in [here](https://github.com/ChunbiaoZhu/TPPF/blob/master/%5BDataset%5DPKU80.zip)
 
+## Cite this paper as:
+
+    @InProceedings{Zhu_2017_ICCV_Workshops,
+    author = {Zhu, Chunbiao and Li, Ge},
+    title = {A Three-Pathway Psychobiological Framework of Salient Object Detection Using Stereoscopic Technology},
+    booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+    month = {Oct},
+    year = {2017}
+    }
 
 ## Acknowledgements
 
